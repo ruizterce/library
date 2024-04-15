@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#books-showcase {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        border: none;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 10px;
+    }
+
+    button:hover {
+        background-color: #a0ffff;
+    }
+
+    #book-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .book-card {
+            flex: 0 0 auto;
+
+            width: 200px;
+            padding: 0px 15px 15px;
+            background-color: #f2f2f7;
+            border-radius: 10px;
+
+            h3 {
+                text-align: center;
+            }
+
+            button {
+                background-color: #cccccc;
+                margin-right: 10px;
+            }
+
+            button:hover {
+                background-color: #a0ffff;
+            }
+        }
+
+        #add-book-btn {
+            height: 205px;
+        }
+    }
+
+    #add-book-sidebar {
+        width: 300px;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: white;
+
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+
+
+            input,
+            textarea {
+                font: 1em sans-serif;
+                width: 250px;
+                box-sizing: border-box;
+                border: 1px solid #999;
+            }
+
+            input[type="checkbox"] {
+                width: auto;
+                border: none;
+            }
+
+            label {
+                display: inline-block;
+            }
+
+            p label {
+                width: 100%;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Book Showcase</h2>
+        <div id="books-showcase">
+
+            <div id="book-cards">
+            </div>
+
+            <div id="add-book-sidebar" style="display:none">
+                <form id="add-book-form">
+                    <button type="button" id="close-sidebar-btn">X</button>
+                    <h3>Add book</h3>
+                    <p>
+                        <label for="title">
+                            <span>Title: </span>
+                        </label>
+                        <input type="text" id="bookTitle" name="bookTitle" required>
+                    </p>
+                    <p>
+                        <label for="author">
+                            <span>Author: </span>
+                        </label>
+                        <input type="text" id="bookAuthor" name="bookAuthor" required>
+                    </p>
+                    <p>
+                        <label for="author">
+                            <span>Number of pages: </span>
+                        </label>
+                        <input type="number" id="bookPages" name="bookPages" required>
+                    </p>
+                    <p>
+                        <label for="read">
+                            <span>Did you read it? </span>
+                        </label>
+                        <input type="checkbox" id="bookRead" name="bookRead">
+                    </p>
+
+                    <button type="submit" id="submit-book-btn">Add</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
