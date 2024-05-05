@@ -18,7 +18,7 @@
             <button type="button" id="close-sidebar-btn">X</button>
             <h3>Add book</h3>
             <p>
-              <label for="title">
+              <label for="bookTitle">
                 <span>Title: </span>
               </label>
               <input
@@ -30,7 +30,7 @@
               />
             </p>
             <p>
-              <label for="author">
+              <label for="bookAuthor">
                 <span>Author: </span>
               </label>
               <input
@@ -42,19 +42,20 @@
               />
             </p>
             <p>
-              <label for="author">
+              <label for="bookPages">
                 <span>Number of pages: </span>
               </label>
               <input
                 type="number"
                 id="bookPages"
                 name="bookPages"
+                min="1"
                 max="999999"
                 required
               />
             </p>
             <p>
-              <label for="read">
+              <label for="bookRead">
                 <span>Did you read it? </span>
               </label>
               <input type="checkbox" id="bookRead" name="bookRead" />
